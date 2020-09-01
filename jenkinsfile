@@ -1,0 +1,14 @@
+pipeline 
+{
+    agent any
+      stages
+      {
+          stage("git checkout")
+           {
+               steps
+               {
+                   git credentialsId: 'github', url: 'https://github.com/Harryogita/java_hello_program.git'
+               }
+           }
+      }
+}
