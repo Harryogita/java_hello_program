@@ -10,5 +10,16 @@ pipeline
                    git credentialsId: 'github', url: 'https://github.com/Harryogita/java_hello_program.git'
                }
            }
-      }
+     stage('use env')
+    {
+    
+    steps
+    {
+        sh "/var/lib/jenkins/workspace/p2/script.sh"
+    }
+    }
+     
+     }
+     
+      
 }
