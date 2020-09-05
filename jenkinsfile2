@@ -1,0 +1,22 @@
+pipeline
+{
+    agent any
+    stages
+      {
+        stage("Welcome")
+               {
+                 steps
+                    {
+                     echo "Hi All , welcome to harry's jenkins pipeline world"
+                    }
+       
+                   
+               }
+               
+                 
+               
+               
+               
+               
+      }
+}
